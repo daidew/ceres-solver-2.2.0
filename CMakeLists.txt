@@ -52,7 +52,7 @@ if (CMAKE_SYSTEM_NAME MATCHES "Darwin")
 endif()
 
 project(Ceres C CXX)
-
+set(CMAKE_CXX_FLAGS  "-std=c++14")
 # NOTE: The following CMake variables must be applied consistently to all
 # targets in project to avoid visibility warnings by placing the variables at
 # the project top.
